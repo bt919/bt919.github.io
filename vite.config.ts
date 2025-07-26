@@ -1,7 +1,6 @@
 import { defineConfig, type UserConfig } from 'vite'
 import type { InlineConfig } from "vitest/node"
 import viteReact from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
 
 import { TanStackRouterVite } from '@tanstack/router-plugin/vite'
 import { resolve } from 'node:path'
@@ -11,7 +10,6 @@ export default defineConfig({
     plugins: [
         TanStackRouterVite({ autoCodeSplitting: true }),
         viteReact(),
-        tailwindcss(),
     ],
     test: {
         globals: true,

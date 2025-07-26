@@ -1,5 +1,5 @@
 import { linkOptions, Link } from "@tanstack/react-router";
-import { useEffect, useState, Fragment } from "react";
+import { useEffect, useState } from "react";
 
 import "@/styles/NavBar.css";
 
