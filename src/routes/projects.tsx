@@ -1,9 +1,17 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute('/projects')({
-  component: RouteComponent,
-})
+import "@/styles/projects.css";
+import { Carousel } from "@/components/carousel";
+import Logo from "../logo.svg";
+
+export const Route = createFileRoute("/projects")({
+	component: RouteComponent,
+});
 
 function RouteComponent() {
-  return <div>Hello "/projects"!</div>
+	return (
+		<div>
+			<Carousel srcList={[Logo, Logo, Logo]} />
+		</div>
+	);
 }

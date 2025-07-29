@@ -1,0 +1,48 @@
+.embla {
+	position: relative;
+}
+
+.embla__viewport {
+	overflow: hidden;
+}
+
+.embla__container {
+	display: flex;
+}
+
+.embla__slide {
+	flex: 0 0 100%;
+	/* min-width: 0; */
+	border: 3px solid var(--text-color);
+	border-radius: 10px;
+	width: 60px;
+	height: 200px;
+}
+
+button {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	padding: 4px;
+	background-color: var(--text-color);
+	color: var(--bg-color);
+	font-weight: 1000;
+	/* opacity: 50%; */
+}
+
+button:hover {
+	cursor: pointer;
+	opacity: 90%;
+}
+
+button.embla__prev {
+	position: absolute;
+	top: 40%;
+	left: 2%;
+}
+
+button.embla__next {
+	position: absolute;
+	top: 40%;
+	right: 2%;
+}
