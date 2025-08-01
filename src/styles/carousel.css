@@ -1,48 +1,75 @@
 .embla {
-	position: relative;
+    position: relative;
 }
 
 .embla__viewport {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .embla__container {
-	display: flex;
+    display: flex;
 }
 
 .embla__slide {
-	flex: 0 0 100%;
-	/* min-width: 0; */
-	border: 3px solid var(--text-color);
-	border-radius: 10px;
-	width: 60px;
-	height: 200px;
+    flex: 0 0 100%;
+    /* min-width: 0; */
+    border: 3px solid var(--text-color);
+    border-radius: 10px;
+    width: 60px;
+    height: 200px;
 }
 
 button {
-	width: 40px;
-	height: 40px;
-	border-radius: 20px;
-	padding: 4px;
-	background-color: var(--text-color);
-	color: var(--bg-color);
-	font-weight: 1000;
-	/* opacity: 50%; */
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 4px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-weight: 1000;
+    /* opacity: 50%; */
 }
 
 button:hover {
-	cursor: pointer;
-	opacity: 90%;
+    cursor: pointer;
+    opacity: 90%;
 }
 
 button.embla__prev {
-	position: absolute;
-	top: 40%;
-	left: 2%;
+    position: absolute;
+    top: 40%;
+    left: 2%;
 }
 
 button.embla__next {
-	position: absolute;
-	top: 40%;
-	right: 2%;
+    position: absolute;
+    top: 40%;
+    right: 2%;
+}
+
+.dot-buttons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+    bottom: 4%;
+}
+
+button.embla__dot {
+    width: 20px;
+    height: 20px;
+    background-color: var(--bg-color);
+}
+
+button.embla__dot:hover {
+    background-color: var(--sub-color);
+}
+
+button.embla__dot--selected {
+    background-color: var(--text-color);
+}
+
+button.embla__dot--selected:hover {
+    background-color: var(--text-color);
 }
