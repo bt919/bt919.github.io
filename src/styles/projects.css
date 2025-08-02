@@ -1,0 +1,8 @@
+.projects-container {
+	min-width: 80%;
+	max-width: 90%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 15px;
+}
