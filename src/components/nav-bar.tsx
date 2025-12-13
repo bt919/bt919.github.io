@@ -13,10 +13,6 @@ const options = linkOptions([
 		label: "Projects",
 	},
 	{
-		to: "/components",
-		label: "Components",
-	},
-	{
 		to: "/themes",
 		label: "Themes",
 	},
