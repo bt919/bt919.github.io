@@ -86,6 +86,14 @@ function App() {
 					title="AWS"
 				/>
 			</div>
+			<p>~ Or in plain words:</p>
+			<ul>
+				<li>
+					JavaScript, TypeScript, Node.js, HTML, CSS, PostgreSQL, React,
+					Express.js, Fastify, Git, Tailwind CSS, Prisma ORM, AWS Lambda, AWS
+					S3, AWS CloudFront, AWS API Gateway
+				</li>
+			</ul>
 		</div>
 	);
 }
