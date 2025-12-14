@@ -25,11 +25,11 @@ const options = linkOptions([
 export function NavBar() {
 	const [isOpen, setIsOpen] = useState(false);
 
-	useEffect(() => {
-		const theme = localStorage.getItem("color") ?? "camping";
-		const root = document.querySelector("html");
-		root?.classList.add(theme);
-	});
+    useEffect(() => {
+        const theme = localStorage.getItem("color") ?? "camping";
+        const root = document.querySelector("html");
+        root?.classList.add(theme);
+    });
 
 	return (
 		<div className="header-nav">
