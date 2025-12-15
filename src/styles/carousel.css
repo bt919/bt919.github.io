@@ -19,7 +19,7 @@
 	height: 200px;
 }
 
-button {
+.project-card button {
 	width: 40px;
 	height: 40px;
 	border-radius: 20px;
@@ -29,18 +29,18 @@ button {
 	font-weight: 1000;
 }
 
-button:hover {
+.project-card button:hover {
 	cursor: pointer;
 	opacity: 90%;
 }
 
-button.embla__prev {
+.project-card button.embla__prev {
 	position: absolute;
 	top: 40%;
 	left: 2%;
 }
 
-button.embla__next {
+.project-card button.embla__next {
 	position: absolute;
 	top: 40%;
 	right: 2%;
