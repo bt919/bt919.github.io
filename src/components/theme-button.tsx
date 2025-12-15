@@ -11,43 +11,47 @@ export function ThemeButton({
 	mainColor,
 }: {
 	theme: string;
-	setCurrentTheme: () => void;
+	setCurrentTheme: (theme: string) => void;
 	bgColor: string;
 	textColor: string;
 	subColor: string;
 	mainColor: string;
 }) {
 	useEffect(() => {
-		const button = document.querySelector(`button.${theme}`);
-		if (button) {
-			button.style["background-color"] = textColor;
-			button.style["color"] = bgColor;
+		const button: HTMLButtonElement | null = document.querySelector(
+			`button.${theme}`,
+		);
+		if (!button) {
+			return;
 		}
-		const bgColorDisplay = button.querySelector(".background-color");
-		if (bgColorDisplay) {
-			console.log("exists");
-			bgColorDisplay.style["background-color"] = bgColor;
-		}
-		const subColorDisplay = button.querySelector(".sub-color");
-		if (subColorDisplay) {
-			subColorDisplay.style["background-color"] = subColor;
-		}
-		const mainColorDisplay = button.querySelector(".main-color");
-		if (mainColorDisplay) {
-			mainColorDisplay.style["background-color"] = mainColor;
-		}
-	}, [theme, bgColor, textColor]);
+		button.style.backgroundColor = textColor;
+		button.style.color = bgColor;
 
-	const handleClick = (e) => {
+		const bgColorDisplay: HTMLDivElement | null =
+			button.querySelector(".background-color");
+		if (bgColorDisplay) {
+			bgColorDisplay.style.backgroundColor = bgColor;
+		}
+		const subColorDisplay: HTMLDivElement | null =
+			button.querySelector(".sub-color");
+		if (subColorDisplay) {
+			subColorDisplay.style.backgroundColor = subColor;
+		}
+		const mainColorDisplay: HTMLDivElement | null =
+			button.querySelector(".main-color");
+		if (mainColorDisplay) {
+			mainColorDisplay.style.backgroundColor = mainColor;
+		}
+	}, [theme, bgColor, subColor, textColor, mainColor]);
+
+	const handleClick = () => {
 		const oldTheme = localStorage.getItem("color") ?? "camping";
 		const root = document.querySelector("html");
 		root?.classList.remove(oldTheme);
 
 		// add new theme
-		console.log("adding new theme");
 		localStorage.setItem("color", theme);
 		root?.classList.add(theme);
-		console.log("new theme added");
 		setCurrentTheme(theme);
 	};
 
