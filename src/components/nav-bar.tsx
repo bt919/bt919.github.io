@@ -26,7 +26,7 @@ export function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        const theme = localStorage.getItem("color") ?? "camping";
+        const theme = localStorage.getItem("color") ?? "retro";
         const root = document.querySelector("html");
         root?.classList.add(theme);
     });
