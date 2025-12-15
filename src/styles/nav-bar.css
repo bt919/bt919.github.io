@@ -1,107 +1,116 @@
 header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .header-nav {
-	margin-top: 20px;
-	margin-bottom: 30px;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav {
-	width: 100%;
-	display: none;
+    width: 100%;
+    display: none;
 }
 
 nav.visible {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav.visible .nav-items {
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
-	width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 95%;
 }
 
 img.github-icon,
 img.linkedin-icon {
-	height: 20px;
-	width: 20px;
+    height: 20px;
+    width: 20px;
 }
 
 nav a {
-	color: var(--text-color);
-	background-color: var(--sub-alt-color);
-	font-weight: bold;
-	padding: 10px;
-	border-radius: 8px;
-	appearance: none;
-	text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--sub-alt-color);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    appearance: none;
+    text-decoration: none;
 }
 
 nav a:hover {
-	color: var(--sub-color);
-	background-color: var(--text-color);
+    color: var(--sub-color);
+    background-color: var(--text-color);
 }
 
 a.active-nav-item {
-	color: var(--bg-color);
-	background-color: var(--text-color);
+    color: var(--bg-color);
+    background-color: var(--text-color);
 }
 
 .menu {
-	display: block;
+    display: block;
 }
 
 .menu svg {
-	margin-left: 20px;
-	height: 30px;
-	width: 30px;
+    margin-left: 20px;
+    height: 30px;
+    width: 30px;
 }
 
 .menu button {
-	appearance: none;
-	outline: none;
-	background: none;
-	border: none;
+    appearance: none;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a h1:hover {
+    opacity: 80%;
 }
 
 @media (min-width: 600px) {
-	.menu {
-		display: block;
-	}
+    .menu {
+        display: block;
+    }
 
-	.header-nav {
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-	}
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
-	.menu {
-		display: none;
-	}
+    .menu {
+        display: none;
+    }
 
-	.nav-items {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 10px;
-	}
+    .nav-items {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
 
-	.nav-items button {
-		width: 100%;
-	}
+    .nav-items button {
+        width: 100%;
+    }
 
-	nav {
-		display: block;
-	}
+    nav {
+        display: block;
+    }
 }
