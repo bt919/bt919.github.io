@@ -1,17 +1,20 @@
 h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
+	font-size: 1.4rem;
+	margin-bottom: 15px;
 }
 
 .themes-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .buttons-container {
-    display: flex;
-    padding: 10px;
-    gap: 20px;
-    /* border: 1px solid black; */
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 10px;
+	gap: 20px;
+	/* border: 1px solid black; */
 }
