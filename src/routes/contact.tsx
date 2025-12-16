@@ -5,5 +5,9 @@ export const Route = createFileRoute("/contact")({
 });
 
 function RouteComponent() {
-	return <div>Hello "/contact"!</div>;
+	return (
+		<div>
+			<p>~ Get in touch at barthan.thiru@gmail.com or through LinkedIn</p>
+		</div>
+	);
 }

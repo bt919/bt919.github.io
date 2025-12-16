@@ -35,9 +35,9 @@ export function NavBar() {
         <div className="header-nav">
             <header>
                 <Link to="/" onClick={() => setIsOpen(false)}>
-                    <h1>Franky Corby</h1>
+                    <h1>Barthan Thiru</h1>
                 </Link>
-                <a href="https://google.com" target="_blank" rel="noreferrer">
+                <a href="https://github.com/bt919" target="_blank" rel="noreferrer">
                     <img
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
                         alt="github repo"
@@ -45,7 +45,7 @@ export function NavBar() {
                     />
                 </a>
 
-                <a href="https://google.com" target="_blank" rel="noreferrer">
+                <a href="https://linkedin.com/in/barthan-thirunavukarasu-40bbaa277" target="_blank" rel="noreferrer">
                     <img
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
                         alt="linkedin profile"
