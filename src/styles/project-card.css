@@ -1,42 +1,47 @@
 .project-card {
-	max-width: 400px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 10px;
-	border: 5px solid var(--main-color);
-	padding: 10px;
-	border-radius: 20px;
-	min-height: 400px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 5px solid var(--main-color);
+    padding: 10px;
+    border-radius: 20px;
+    min-height: 400px;
 }
 
 .skill-section {
-	width: 90%;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 15px;
-	color: var(--main-color);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: var(--main-color);
 }
 
 .bulletpoints-section {
-	width: 90%;
-	margin: 5px;
+    width: 90%;
+    margin: 5px;
 }
 
 .bulletpoints-section p {
-	margin: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
 }
 
 .links-section {
-	width: 90%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .links-section img,
 .links-section svg {
-	width: 40px;
+    width: 40px;
+}
+
+.separator {
+    border: 1px dashed var(--main-color);
+    width: 90%;
 }

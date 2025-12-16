@@ -3,6 +3,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import "@/styles/projects.css";
 import { ProjectCard } from "@/components/project-card";
 import Logo from "../logo.svg";
+import Dwella1 from "../dwella1.jpeg";
+import Dwella2 from "../dwella2.jpeg";
+import Dwella3 from "../dwella3.jpeg";
+import Wordle1 from "../wordle1.jpeg";
+import Wordle2 from "../wordle2.jpeg";
+import Wordle3 from "../wordle3.jpeg";
+import Wordle4 from "../wordle4.jpeg";
 
 export const Route = createFileRoute("/projects")({
     component: RouteComponent,
@@ -12,46 +19,45 @@ function RouteComponent() {
     return (
         <div className="projects-container">
             <ProjectCard
-                srcList={[Logo, Logo, Logo]}
-                title="Da Project"
+                srcList={[Dwella1, Dwella2, Dwella3]}
+                title="Dwella"
                 skills={[
-                    "React",
-                    "TypeScript",
-                    "Express.js",
-                    "Prisma ORM",
-                    "PostgreSQL",
-                    "Tailwind CSS",
+                    "React", "Node.js", "Express.js", "PostgreSQL",
                 ]}
                 bulletpoints={[
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
+                    "Capstone project consisting of 10 other teammates.",
+                    "Refactored a feature using pagination which greatly reduced data payload and loading times.",
+                    "Implemented textsearch features using PostgreSQL.",
+                    "Implemented a real-time chat feature."
                 ]}
-                githubLink="https://www.google.com"
-                demoLink="https://www.google.com"
+                githubLink="https://github.com/codepioneerx/dwella"
+            // demoLink="https://www.google.com"
             />
             <ProjectCard
-                srcList={[Logo, Logo, Logo]}
-                title="Da Project"
+                srcList={[Wordle1, Wordle2, Wordle3, Wordle4]}
+                title="Wordle Clone"
                 skills={[
                     "React",
                     "TypeScript",
-                    "Express.js",
-                    "Prisma ORM",
+                    "Fastify",
                     "PostgreSQL",
+                    "AWS Lambda",
+                    "AWS Gateway",
                     "Tailwind CSS",
+                    "Cypress"
                 ]}
                 bulletpoints={[
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
+                    "Recreated the popular wordle game using React, Fastify, and Tailwind CSS for animations.",
+                    "Added a new feature which allows users to create their own wordle and send it to friends.",
+                    "Implemented tests using Cypress which covers the backend, frontend, as well as end-to-end tests.",
+                    "Hosted the Fastify backend using AWS Lambda, and AWS API Gateway."
                 ]}
-                githubLink="https://www.google.com"
-                demoLink="https://www.google.com"
+                githubLink="https://github.com/bt919/wordle"
+                demoLink="https://wordle-d6g.pages.dev"
             />
             <ProjectCard
-                srcList={[Logo, Logo, Logo]}
-                title="Da Project"
+                srcList={[Logo]}
+                title="Condo Management System"
                 skills={[
                     "React",
                     "TypeScript",
@@ -61,107 +67,12 @@ function RouteComponent() {
                     "Tailwind CSS",
                 ]}
                 bulletpoints={[
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
+                    "10-team project that builds a condo management system via a website and mobile app.",
+                    "Implemented authentication using JsonWebToken (JWT), and bcrypt for hashing passwords.",
+                    "Implemented database schemas and queries using PostgreSQL.",
+                    "Implemented various backend endpoints using Express.js."
                 ]}
-                githubLink="https://www.google.com"
-                demoLink="https://www.google.com"
-            />
-            <ProjectCard
-                srcList={[Logo, Logo, Logo]}
-                title="Da Project"
-                skills={[
-                    "React",
-                    "TypeScript",
-                    "Express.js",
-                    "Prisma ORM",
-                    "PostgreSQL",
-                    "Tailwind CSS",
-                ]}
-                bulletpoints={[
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                ]}
-                githubLink="https://www.google.com"
-                demoLink="https://www.google.com"
-            />
-            <ProjectCard
-                srcList={[Logo, Logo, Logo]}
-                title="Da Project"
-                skills={[
-                    "React",
-                    "TypeScript",
-                    "Express.js",
-                    "Prisma ORM",
-                    "PostgreSQL",
-                    "Tailwind CSS",
-                ]}
-                bulletpoints={[
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                ]}
-                githubLink="https://www.google.com"
-                demoLink="https://www.google.com"
-            />
-            <ProjectCard
-                srcList={[Logo, Logo, Logo]}
-                title="Da Project"
-                skills={[
-                    "React",
-                    "TypeScript",
-                    "Express.js",
-                    "Prisma ORM",
-                    "PostgreSQL",
-                    "Tailwind CSS",
-                ]}
-                bulletpoints={[
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                ]}
-                githubLink="https://www.google.com"
-                demoLink="https://www.google.com"
-            />
-            <ProjectCard
-                srcList={[Logo, Logo, Logo]}
-                title="Da Project"
-                skills={[
-                    "React",
-                    "TypeScript",
-                    "Express.js",
-                    "Prisma ORM",
-                    "PostgreSQL",
-                    "Tailwind CSS",
-                ]}
-                bulletpoints={[
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                ]}
-                githubLink="https://www.google.com"
-                demoLink="https://www.google.com"
-            />
-            <ProjectCard
-                srcList={[Logo, Logo, Logo]}
-                title="Da Project"
-                skills={[
-                    "React",
-                    "TypeScript",
-                    "Express.js",
-                    "Prisma ORM",
-                    "PostgreSQL",
-                    "Tailwind CSS",
-                ]}
-                bulletpoints={[
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                    "Worked across the stack in a 11-person project",
-                ]}
-                githubLink="https://www.google.com"
-                demoLink="https://www.google.com"
+                githubLink="https://github.com/Irisvella/SOEN-390-W2024"
             />
         </div>
     );
