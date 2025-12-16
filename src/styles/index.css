@@ -28,7 +28,9 @@ ul {
     margin-bottom: 20px;
     line-height: 1.6rem;
     display: flex;
+    flex-direction: column;
     justify-content: left;
+    gap: 5px;
 }
 
 @media (min-width: 600px) {
